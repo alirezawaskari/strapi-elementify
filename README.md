@@ -1,3 +1,5 @@
-# puck-page-builder
+# strapi-elementify
 
-Visual page builder for react, strapi plugin
+React visual page builder for strapi
+
+ - Based on Puck -
