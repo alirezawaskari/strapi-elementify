@@ -1,0 +1,78 @@
+{
+  "version": "0.0.0",
+  "keywords": [],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/src/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
+    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+  },
+  "dependencies": {
+    "@measured/puck": "^0.16.1",
+    "@strapi/design-system": "^2.0.0-rc.12",
+    "@strapi/icons": "^2.0.0-rc.12",
+    "react-intl": "^6.8.7"
+  },
+  "devDependencies": {
+    "@strapi/sdk-plugin": "^5.2.7",
+    "@strapi/strapi": "^4.25.15",
+    "@strapi/typescript-utils": "^5.2.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "styled-components": "^6.1.13",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "@strapi/sdk-plugin": "^5.2.7",
+    "@strapi/strapi": "^4.25.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "styled-components": "^6.1.13"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "puck-page-builder",
+    "displayName": "Puck",
+    "description": "Visuak Page Builder for react"
+  },
+  "name": "puck-page-builder",
+  "description": "Visuak Page Builder for react",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alirezawaskari/puck-page-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alirezawaskari/puck-page-builder/issues"
+  },
+  "homepage": "https://github.com/alirezawaskari/puck-page-builder#readme",
+  "author": "Alireza Askari <alirezawaskari@gmail.com>"
+}
