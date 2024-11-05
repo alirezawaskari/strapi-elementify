@@ -2,4 +2,4 @@
 
 React visual page builder for strapi
 
- - Based on Puck -
+ - Based on Puck - Elementor Variant
